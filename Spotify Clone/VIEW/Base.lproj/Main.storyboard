@@ -111,6 +111,7 @@
                                                                         <outlet property="albumArtwork" destination="c1h-CQ-aVh" id="0IU-WK-Wzm"/>
                                                                         <outlet property="albumTitleLabel" destination="qq7-mG-nAQ" id="Cfb-Up-hDZ"/>
                                                                         <outlet property="artistNameLabel" destination="GNB-cn-iqw" id="X3n-UZ-bbf"/>
+                                                                        <segue destination="IbE-vd-HfY" kind="show" identifier="albumSelectedSegue" id="B0K-9Q-lJL"/>
                                                                     </connections>
                                                                 </collectionViewCell>
                                                             </cells>
@@ -163,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2706" y="-735"/>
+            <point key="canvasLocation" x="-3577" y="-841"/>
         </scene>
         <!--Album View Controller-->
         <scene sceneID="Kmt-sh-3Yx">
@@ -215,11 +216,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="CpU-zJ-ZxS" kind="show" identifier="songSelectedSegue" id="PQd-Ki-bMf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bhY-sw-nzW">
-                                <rect key="frame" x="40" y="64" width="334" height="234"/>
+                                <rect key="frame" x="40" y="108" width="334" height="190"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="iwu-dD-wON">
                                 <rect key="frame" x="0.0" y="390" width="414" height="130"/>
@@ -253,6 +257,9 @@
                                         <state key="normal" title="SHUFFLE PLAY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="CpU-zJ-ZxS" kind="show" identifier="shufflePlaySegue" id="fjf-gP-l5h"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -293,10 +300,11 @@
                             <constraint firstItem="bhY-sw-nzW" firstAttribute="leading" secondItem="FwD-rT-eMo" secondAttribute="leading" constant="40" id="zvW-bc-nCZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FtV-9b-Va0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibD-oD-sxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-632" y="-656"/>
+            <point key="canvasLocation" x="-2807" y="-860"/>
         </scene>
         <!--Song View Controller-->
         <scene sceneID="Zz6-HN-QwU">
@@ -307,7 +315,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music.note.house" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nAx-Ki-A4g">
-                                <rect key="frame" x="37" y="79" width="340" height="284"/>
+                                <rect key="frame" x="37" y="123" width="340" height="240"/>
                                 <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tsB-1C-gW6">
@@ -427,10 +435,11 @@
                             <constraint firstItem="nAx-Ki-A4g" firstAttribute="leading" secondItem="Dy0-RO-GCF" secondAttribute="leading" constant="37" id="vC3-3m-0H4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="08h-lk-CMP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ix2-X1-NOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="-656"/>
+            <point key="canvasLocation" x="-2059" y="-851"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sht-BJ-Wsp">
@@ -451,14 +460,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sg5-p3-MW2"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7wb-rE-gFc"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fea-yS-nTP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3151" y="-735"/>
+            <point key="canvasLocation" x="-4488" y="-851"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PQd-Ki-bMf"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="backward.end.fill" catalog="system" width="128" height="102"/>
         <image name="forward.end.fill" catalog="system" width="128" height="102"/>

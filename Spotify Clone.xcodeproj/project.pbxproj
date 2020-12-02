@@ -23,6 +23,7 @@
 		5F6EECD625721ACF0068F6EA /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EECD525721ACF0068F6EA /* SongViewController.swift */; };
 		5F6EECD725721ACF0068F6EA /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EECD525721ACF0068F6EA /* SongViewController.swift */; };
 		5F6EECD825721ACF0068F6EA /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6EECD525721ACF0068F6EA /* SongViewController.swift */; };
+		808791E22578046400C84424 /* web-api-auth-examples in Resources */ = {isa = PBXBuildFile; fileRef = 808791E12578046400C84424 /* web-api-auth-examples */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		5F6EECAC257213B20068F6EA /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		5F6EECCE25721ABA0068F6EA /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		5F6EECD525721ACF0068F6EA /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		808791E12578046400C84424 /* web-api-auth-examples */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "web-api-auth-examples"; path = "Spotify Clone/web-api-auth-examples"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5F6EEC4A2571E4120068F6EA /* Spotify Clone */,
+				808791E12578046400C84424 /* web-api-auth-examples */,
 				5F6EEC612571E4140068F6EA /* Spotify CloneTests */,
 				5F6EEC6C2571E4140068F6EA /* Spotify CloneUITests */,
 				5F6EEC492571E4120068F6EA /* Products */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6EEC582571E4140068F6EA /* LaunchScreen.storyboard in Resources */,
+				808791E22578046400C84424 /* web-api-auth-examples in Resources */,
 				5F6EEC552571E4140068F6EA /* Assets.xcassets in Resources */,
 				5F6EEC532571E4120068F6EA /* Main.storyboard in Resources */,
 			);
